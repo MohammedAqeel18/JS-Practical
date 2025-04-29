@@ -1,26 +1,23 @@
 let phone = false;
-let phonebrand="I phone 14 pro max";
-let price = 100000.00;
+let price = 10000.00;
+let model= "i phone 16 ";
 
-let laptop =false;
-let lapbrand= "Macbook pro 16 inch";
-let lapprice= 1300000.00;
+let laptop = false;
+let lapPrice= 30000.00;
+let lapModel = "Hp";
 
-
+let Radio = true;
+let RadioStock ="Sorry Radio stocks are not available"; 
 let reply;
+if(phone){
+reply=` you desired ${model} phone is  available and the price is ${price}`;
 
-if (phone){
-    reply= `Here is the brand new ${phonebrand} and the price is ${price}`;
+}else if(laptop){
+    reply = `you desired ${lapModel} is available and the price is ${lapPrice} `;
 }
 
-else if(laptop){
-    reply = `Here is the brand new ${lapbrand} and the price is ${lapprice}`;
-}
-
-else 
-{
-    reply = `Sorry, the product is not available`;
-
+else {
+reply = RadioStock;
 }
 
 console.log(reply);
