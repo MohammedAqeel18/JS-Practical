@@ -11,4 +11,8 @@ const movie= {
 }
 // Destructuring the object
 const {actor , music , MOVIE ,director , producer, language ,genre}=movie;
-console.log(actor);
+function sings ({music})
+{
+    return music;
+};
+    console.log(music);
